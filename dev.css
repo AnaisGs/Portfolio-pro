@@ -1,0 +1,228 @@
+.info h1 {
+    margin-top: 8rem;
+    color:white;
+    font-size: 50px;
+    padding-top: 80px;
+    text-align: center;
+  }
+
+.info h1 span {
+    color: #ED2279;
+  }
+
+  .text-container {
+    background-color: rgba(255, 255, 255, 0.1); /* Fond légèrement transparent */
+    padding: 30px;
+    border-radius: 10px; /* Coins arrondis */
+    max-width: 80%; /* Largeur max */
+    margin: 20px auto; /* Centrer */
+    text-align: center;
+}
+
+.text-container p {
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+}
+
+
+.wave {
+    position: relative;
+    width: 100%;
+    height: 80px;
+    margin-top: -5px; /* Pour éviter un espace blanc entre les sections */
+}
+
+@keyframes waveMove {
+    0% { transform: translateX(0px); }
+    50% { transform: translateX(-20px); }
+    100% { transform: translateX(0px); }
+}
+
+.wave path {
+    animation: waveMove 5s infinite ease-in-out;
+}
+
+
+
+
+.line {
+    width: 100%;
+    height: 15px;
+    background-color: #ED2279;
+    margin: 150px 0;
+}
+
+.separator {
+    width: 80%;
+    height: 5px;
+    background: linear-gradient(to right, #ED2279, transparent);
+    margin: 50px auto;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        width: 0;
+    }
+    to {
+        width: 80%;
+    }
+}
+
+
+.separator-diagonal {
+    width: 100%;
+    height: 50px;
+    background: #ED2279;
+    transform: skewY(-3deg);
+    margin-bottom: 30px;
+}
+
+
+
+/* Barre de défilement horizontale */
+.scrolling-bar {
+    width: 100%;
+    overflow: hidden;
+    background-color: #ED2279; /* Couleur de fond */
+    padding: 10px 0;
+    margin-top: 150px;
+    position: relative;
+}
+
+/* Texte défilant */
+.scrolling-text {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scrollText 20s linear infinite;
+}
+
+.scrolling-text span {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+}
+
+/* Animation du texte */
+@keyframes scrollText {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+
+
+/* 🔹 Style du titre */
+h1.projet {
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    margin-top: 50px; /* Remonte le titre */
+}
+
+h1.projet span {
+    color: #ED2279;
+}
+
+/* 🔹 Conteneur principal */
+.project-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    padding: 50px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* 🔹 Image et effet hover */
+.projets_card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    width: 500px;
+}
+
+/* 🔹 Image */
+.projets_card img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    transition: 0.4s ease-in-out;
+}
+
+.projets_card a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/* 🔹 Effet hover */
+.projets_card .hover-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.4s ease-in-out;
+    color: white;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* 🔹 Quand on survole l’image */
+.projets_card:hover .hover-content {
+    opacity: 1;
+}
+
+.projets_card:hover img {
+    transform: scale(1.05);
+}
+
+/* 🔹 Encadré pour la description */
+.project-description {
+    max-width: 500px;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    border: 3px solid #ED2279;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(237, 34, 121, 0.5);
+    backdrop-filter: blur(5px);
+    line-height: 1.6;
+}
+
+/* 🔹 Responsive */
+@media screen and (max-width: 1024px) {
+    .project-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 50px;
+    }
+
+    .projets_card {
+        width: 320px;
+    }
+
+    .project-description {
+        max-width: 90%;
+        font-size: 18px;
+        padding: 20px;
+    }
+}
