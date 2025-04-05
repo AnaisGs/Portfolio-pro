@@ -1,143 +1,317 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
+    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Anaïs</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="img/memojip.png">
+    <title>Mon portfolio</title>
 </head>
 <body>
- <nav>
-        <input type="checkbox" class="checkbox" id="check">
-        <h1 class="nav_head">Anaïs</h1>
-        <ul>
-            <li><a href="#Acceuil">Accueil</a></li>
-            <li><a href="#Apropos">À propos</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#projet">Projet</a></li>
-          <a href="#contact"><button class="contact_btn">Contact</button></a>
-        </ul>
-      </div>
-        <label for="check" class="checkbtn">
-            <i class="fas fa-bars"></i>
-        </label>
-      </nav>
+  <header>
+    <a href="#home" class="logo">Anaïs/a>
+    <div class="hamburger-icon" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <nav>
+      <a href="#home" class="active">Accueil</a>
+      <a href="#apropos">À propos</a>
+      <a href="#competences">Compétences</a>
+      <a href="#projet">Projets</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+  
+    
     <section id="home" class="home">
-      <img src="./images/memojip.png" alt="Photo de Anaïs" width="400px" height="400px">
-      <div class="description">
-        <h1> Bonjour je suis <br><span> Anaïs Goulamhoussen</span></h1>
-        <h2> I'm a <span> Web developpeuse | UI/UX design </span></h2>
-        <p> A la recherche d'un stage de 10 semaines minimum à partir du 14 avril !
-        </p>
-        <div class="font">
-          <i class="fa-brands fa-linkedin"></i>
-          <i class="fa-brands fa-behance"></i>
-          <i class="fa-brands fa-github"></i>
+        <div class="home-img">
+            <img src="img/apropos.png" alt="profil pic">
         </div>
-        <button> Mon CV</button>
-      </div>
+        <div class="home-content">
+            <h1>Goulamhoussen <span> Anaïs</span></h1>
+            <h3 class="typing-text">Développeuse <span>Web</span></h3>
+            <div class="social-icons">
+              <a href="https://www.linkedin.com/in/ana%C3%AFs-goulamhoussen-satsou-baa14a252/" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/AnaisGs" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="" target="_blank">
+                <i class="fa-brands fa-behance"></i>
+            </a>
+        </div>
+            <a href="https://www.canva.com/design/DAGfrbhE6qQ/M0yYCYh_d4G3NiJn_-lBkQ/view?utm_content=DAGfrbhE6qQ&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hda1fbd6d77" class="btn" target="_blank">Voir le CV</a>
+        </div>
     </section>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-      <path fill="#ED2279" fill-opacity="1" d="M0,128L60,138.7C120,149,240,171,360,165.3C480,160,600,128,720,122.7C840,117,960,139,1080,149.3C1200,160,1320,160,1380,160L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
-    <section id="about" class="about">
-<div class="about_section">
-<h1> Qui-suis<span>je ?</span></h1>
-<h2> Développeuse full-stack <span> UI/UX design</span></h2>
-<p>  Anaïs Goulamhoussen, étudiante en BUT Métiers du Multimédia et de l’Internet (MMI), passionnée par le développement full stack et le UX/UI design. J’aime allier créativité et technique pour concevoir des expériences interactives et intuitives.
 
-Curieuse et toujours en quête d’innovation, je cherche à créer des interfaces esthétiques et fonctionnelles qui placent l’utilisateur au cœur de l’expérience. Mon objectif ? Allier design et performance pour donner vie à des projets impactants.
+    <section id="apropos">
+        <p class="section_texte_p1">En savoir plus</p>
+        <h1 class="title">À propos de moi</h1>
+        <div class="section-container">
+             <!---<div class="section__pic-container">
+               <img src="img/main.png" alt="profil pic" class="about-pic"> 
+            </div>--->
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="img/logo-education.png" alt="pp" class="icon"/>
+                    <h3 class="h3">Éducation</h3> 
+                    <p class="text">Bachelor Métiers du multimédia et de l'Internet, Parcours développement web <br />Baccalauréat Général</p>
+                </div>                  
+                </div> 
+                <div class="text-container">
+                <h2>Prête à coder l'avenir du web ! 🌐</h2> 
+                <p>Actuellement en deuxième année de BUT Métiers du Multimédia et de l'Internet, avec une spécialisation en développement web. Passionnée par le front-end et le design d’interfaces, je m'intéresse particulièrement à l'UI/UX design et à la création d’expériences utilisateurs intuitives et esthétiques.
 
-Bienvenue dans mon univers ! 🚀✨</p>
-<button class="about_btn"> Read more…</button>
-</div> 
-<div class="about_photo">
-  <img src="./images/apropos.png" alt="Photo de Anaïs" width="420px" height="450px">
-</div>
-</section> 
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-  <path fill="#ED2279" fill-opacity="1" d="M0,128L60,138.7C120,149,240,171,360,165.3C480,160,600,128,720,122.7C840,117,960,139,1080,149.3C1200,160,1320,160,1380,160L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
-<section id="service">
-  <h1 class="service_section"> Mes <span> Services</span></h1>
-  <div class="card">
-    <div class="service_card">
-      <i class="fas fa-computer">
-        <h2> Développeuse full stack</h2>
-        <p> Développeuse full stack junior, je suis a votre disposition pour vosu créer le plus beaux des sites et le plus capable grace a mes compétence en html css JavaScriptsql PHP
-        </p>
-        <a href="#"> En savoir plus…</a>
-      </i>
-    </div>
-    <div class="service_card">
-      <i class="fas fa-computer">
-        <h2> UI/UX Design</h2>
-        <p>Développeuse full stack junior, je suis a votre disposition pour vosu créer le plus beaux des sites et le plus capable grace a mes compétence en html css JavaScriptsql PHP
-        </p>
-        <a href="#"> En savoir plus…</a>
-      </i>
-    </div>
-    <div class="service_card">
-      <i class="fas fa-computer">
-        <h2> Création graphiques </h2>
-        <p>Développeuse full stack junior, je suis a votre disposition pour vosu créer le plus beaux des sites et le plus capable grace a mes compétence en html css JavaScriptsql PHP
-        </p>
-        <a href="#"> En savoir plus…</a>
-      </i>
-    </div>
-  </div>
-</section>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-  <path fill="#ED2279" fill-opacity="1" d="M0,128L60,138.7C120,149,240,171,360,165.3C480,160,600,128,720,122.7C840,117,960,139,1080,149.3C1200,160,1320,160,1380,160L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
-<section id="portfolio"></section>
-<h1 class="port_section">Mes <span>Projets</span></h1>
-<div class="project">
-  <div class="port_card">
-    <a href="dev.html">
-      <img src="./images/projet.png" alt="" width="350px" height="350px">
-      <a href="dev.html"></a>
-    <div class="content">
-      <h1>Web développement </h1>
-      <p> Venez découvir mon tout premier projet </p>
-    </div>
-  </div>
-  <div class="port_card">
-    <a href="ux.html">
-        <img src="./images/projet.png" alt="" width="350px" height="350px">
-    </a>
-    <div class="content">
-      <h1>Maquette</h1>
-      <p> Venez découvrir mon tout premier projet </p>
-    </div>
-</div>
+                    Créative et curieuse, j'aime explorer de nouveaux outils et affiner mes compétences techniques pour concevoir des projets à la fois fonctionnels et visuellement attrayants. En parallèle de mes études, je nourris ma sensibilité artistique à travers la photographie et la lecture, qui inspirent souvent mon approche du design.
+                    
+                    
+                    Mon objectif : concevoir des interfaces modernes, accessibles et engageantes, en combinant code et créativité.
+                    
+                    <br>
+                  📢 À la recherche d’un stage de 10 semaines (mi-avril 2025) en développement web ! Motivée et curieuse, je souhaite mettre mes compétences au service d’une équipe dynamique pour continuer à apprendre et relever de nouveaux défis.</p>
+                </div>
+                </div>
+            </div>
+        </div> 
+    </section>
 
-<div class="port_card">
-    <a href="Création.html">
-        <img src="./images/projet.png" alt="" width="350px" height="350px">
-    </a>
-    <div class="content">
-      <h1>Affiche</h1>
-      <p> Venez découvrir mon tout premier projet </p>
-    </div>
-</div>
-</div>
-</section>
-<footer>
-  <div class="footer_container">
-    <div class="footer_contact">
-      <h3>Me contacter</h3>
-      <p><i class="fas fa-envelope"></i> anais.goulamhoussen@example.com</p>
-      <p><i class="fas fa-phone"></i> +33 6 12 34 56 78</p>
-      <div class="footer_social">
-        <a href="#"><i class="fab fa-linkedin"></i></a>
-        <a href="#"><i class="fab fa-behance"></i></a>
-        <a href="#"><i class="fab fa-github"></i></a>
+    <section id="competences">
+      <p class="section_texte_p1">Découvrez</p>
+      <h1 class="title">Mes compétences</h1>
+      <div class="competence-details-container">
+          <div class="competence-containers">
+              <div class="details-container-competence">
+                  <h2 class="competence-sub-title">Développement Web</h2>
+                  <div class="article-container-competence">
+                      <article>
+                          <img
+                              src="img/checkmark.png"
+                              alt="Experience icon"
+                              class="icon-competence"
+                          />
+                          <div>
+                              <h3>HTML</h3>
+                          </div>
+                      </article>
+                      <article>
+                          <img
+                              src="img/checkmark.png"
+                              alt="Experience icon"
+                              class="icon-competence"
+                          />
+                          <div>
+                              <h3>CSS</h3>
+                          </div>
+                      </article>
+                      <article>
+                          <img
+                              src="img/checkmark.png"
+                              alt="Experience icon"
+                              class="icon-competence"
+                          />
+                          <div>
+                              <h3>PHP</h3>
+                          </div>
+                      </article>
+                      <article>
+                          <img
+                              src="img/checkmark.png"
+                              alt="Experience icon"
+                              class="icon-competence"
+                          />
+                          <div>
+                              <h3>JavaScript</h3>
+                          </div>
+                      </article>
+                      <article>
+                        <img
+                            src="img/checkmark.png"
+                            alt="Experience icon"
+                            class="icon-competence"
+                        />
+                        <div>
+                            <h3>Python</h3>
+                        </div>
+                    </article>
+                    <article>
+                      <img
+                          src="img/checkmark.png"
+                          alt="Experience icon"
+                          class="icon-competence"
+                      />
+                      <div>
+                          <h3>Base de données</h3>
+                      </div>
+                      </article>
+                      
+                      <h2 class="competence-sub-title">Logiciels</h2>
+                      <article>
+                        <img
+                            src="img/checkmark.png"
+                            alt="Experience icon"
+                            class="icon-competence"
+                        />
+                        <div>
+                            <h3>Visual Studio Code</h3>
+                        </div>
+                    </article>
+                    <article>
+                      <img
+                          src="img/checkmark.png"
+                          alt="Experience icon"
+                          class="icon-competence"
+                      />
+                      <div>
+                          <h3>GitHub</h3>
+                      </div>
+                  </article>
+                      <article>
+                        <img
+                            src="img/checkmark.png"
+                            alt="Experience icon"
+                            class="icon-competence"
+                        />
+                        <div>
+                            <h3>Wordpress</h3>
+                        </div>
+                    </article>
+                  </div>
+              </div> <br>
+      
+              <div class="details-container-competence">
+                  <h2 class="competence-sub-title">Compétences dans d'autres domaines</h2>
+                  <div class="article-container-competence">
+                      <article>
+                          <img
+                              src="img/checkmark.png"
+                              alt="Experience icon"
+                              class="icon-competence"
+                          />
+                          <div>
+                              <h3>Adobe Creative Cloud</h3>
+                          </div>
+                      </article>
+                      <article>
+                          <img
+                              src="img/checkmark.png"
+                              alt="Experience icon"
+                              class="icon-competence"
+                          />
+                          <div>
+                              <h3>Davinci Resolve</h3>
+                          </div>
+                      </article>
+                      <article>
+                          <img
+                              src="img/checkmark.png"
+                              alt="Experience icon"
+                              class="icon-competence"
+                          />
+                          <div>
+                              <h3>Klynt</h3>
+                          </div>
+                      </article>
+                      <article>
+                        <img
+                            src="img/checkmark.png"
+                            alt="Experience icon"
+                            class="icon-competence"
+                        />
+                        <div>
+                            <h3>Figma</h3>
+                        </div>
+                    </article>
+                  </div>
+              </div>
+          </div>
       </div>
+  </section>
+  
+
+          <section id="projet" class="projects"> 
+          <p class="section_texte_p1">Découvrez</p>
+                <h1 class="title">Mes projets</h1>
+                
+            <div class="project-card">
+                <img src="img/sae1.png" alt="Conception de site web ">
+                <h3>Conception d’un site web</h3>
+                <p>Conception d'un site web en HTML, CSS et PHP, avec la gestion d’un formulaire.</p> 
+                <p>Logiciel : Visual Studio Code</p> 
+
+                <a href="https://hamed.alwaysdata.net/BUT1MM1/dev/SAE105/Cours/acceuil.php" class="projet-link" target="_blank">Voir le projet ↗</a>
+            </div>
+            <div class="project-card">
+                <img src="img/sae2.png" alt="Conception d’un site avec base de donnée">
+                <h3>Conception d’un site web avec base de données</h3>
+                <p>Conception d'un site web en HTML, CSS et PHP, avec la gestion d’une base de donnée en MySQL.</p>
+                <p>Logiciel : Visual Studio Code</p> 
+                <a href="https://wizan.alwaysdata.net/SAE-203-consignes/code/" class="projet-link" target="_blank">Voir le projet ↗</a>
+            </div>
+            <div class="project-card">
+                <img src="img/sae3.png" alt="Conception de visualisations de données">
+                <h3>Conception de visualisations de données pour le web </h3>
+                <p>Réalisation d'une application interactive en JavaScript, en utilisant des jeux de données.</p>
+                <p>Logiciels : Visual Studio Code, GitHub</p> 
+                <a href="https://wazabih.github.io/SAE_303-Data/index.html" class="projet-link" target="_blank">Voir le projet ↗</a>
+            </div>
+            <div class="project-card">
+              <img src="img/Chartegraphique.png" alt=" Produire les éléments d’une communication visuelle ">
+              <h3>Production d'éléments pour une communication visuelle </h3>
+              <p>Création d’une charte graphique complète pour un webdocumentaire, conçue sur Figma.
+                Le projet inclut la définition de l'identité visuelle, le choix des couleurs, typographies, composants UI, et la mise en page des écrans clés pour une expérience utilisateur immersive et cohérente. </p>
+              <p>Logiciel : Figma </p> 
+              <a href="https://drive.google.com/file/d/1qTcnCQB_jlNUqPtkrOJAiNaQw5n1qgx0/view" class="projet-link" target="_blank">Voir le projet ↗</a>
+          </div>
+          <div class="project-card">
+            <img src="img/sae5.png" alt=" Web documentaire : Développement full-stack ">
+            <h3>Web documentaire : Développement full-stack</h3>
+            <p>Découvrez un web documentaire sur le métier de développeur full stack. En collaboration avec un professionnel du secteur, nous explorons des sujets clés comme les débouchés, les salaires et le quotidien d’un développeur.</p>
+            <p>Logiciel : Klynt</p> 
+            <a href="https://anaisgs.github.io/Webdocumentaire/" class="projet-link" target="_blank">Voir le projet ↗</a>
+        </div>
+        <div class="project-card">
+            <img src="img/sae5.png" alt=" Maquette agence immobilière imager">
+            <h3>Maquette agence immobilière imager</h3>
+            <p>Cette maquette illustre l’identité visuelle d’une agence immobilière moderne et élégante. L’objectif était de concevoir une interface épurée, intuitive et visuellement impactante, mettant en valeur les biens tout en facilitant la navigation pour les utilisateurs. L'accent a été mis sur l’expérience utilisateur (UX) et un design graphique soigné, avec une mise en page claire et une hiérarchie visuelle efficace.</p>
+            <p>Logiciel : Figma</p> 
+            <a href="https://www.figma.com/proto/F1oC0zKf6BBVKS0uJmMKw3/Untitled?t=GZf5mSJgUMW1Z5bq-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&node-id=1-101" class="projet-link" target="_blank">Voir le projet ↗</a>
+        </div>
+      </section>
+
+      <div class="section-contact" id="contact">
+        <h1 class="title">Contactez-moi</h1> <br>
+        <div class="contact-info">
+            <a href="https://www.linkedin.com/in/ana%C3%AFs-goulamhoussen-satsou-baa14a252/" target="_blank" class="linkedin-link">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <span class="separator">|</span>
+            <a href="mailto: anaisglm05@gmail.com" class="email-link"> anaisglm05@gmail.com</a>
+        </div>
     </div>
+      
+                
+<!---FOOTER-->
+
+<footer class="footer">
+  <div class="container-footer">
+    
+    <nav class="nav-footer ">
+      <a href="#home" >Accueil</a>
+      <a href="#apropos">À propos</a>
+      <a href="#competences">Compétences</a>
+      <a href="#projet">Projets</a>
+      <a href="#contact">Contact</a>
+    </nav> <br>
+    <p>© Anaïs Goulamhoussen-Satsou. Tous droits réservés.</p>
   </div>
-  <p class="footer_bottom">&copy; 2024 Anaïs Goulamhoussen | Tous droits réservés</p>
 </footer>
 
+<script src="style.js"></script>
 </body>
 </html>
-
-
